@@ -12,6 +12,7 @@ import (
 	"sync"
 	"time"
 
+	logmate_config "github.com/gogap/config"
 	"github.com/gogap/logrus_mate"
 	"github.com/sirupsen/logrus"
 )
@@ -277,7 +278,7 @@ func New(config Config, queueSize int) (logrus.Hook, error) {
 }
 
 // NewFromConfig creates a new LogDNA hook from the Logrus Mate configuration
-func NewFromConfig(config logrus_mate.Configuration) (logrus.Hook, error) {
+func NewFromConfig(config logmate_config.Configuration) (logrus.Hook, error) {
 	var formatter logrus.Formatter
 	if config.GetBoolean("text-format", false) {
 		// TODO: Think of a way to pass arbitrary formatter via config
