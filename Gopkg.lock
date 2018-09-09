@@ -2,22 +2,31 @@
 
 
 [[projects]]
+  name = "github.com/drdaeman/logdna-logrus"
+  packages = ["."]
+  revision = "48409db437e7e00eec11581375fe8bd9afb48e5f"
+  version = "v0.1.0"
+
+[[projects]]
   branch = "master"
   name = "github.com/go-akka/configuration"
-  packages = [".","hocon"]
+  packages = [
+    ".",
+    "hocon"
+  ]
   revision = "755180b9a146a94d76051113e9624bdc8327c499"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/gogap/config"
+  packages = ["."]
+  revision = "a1522129698c2ffaf1089351ad23156a1208ed09"
 
 [[projects]]
   branch = "master"
   name = "github.com/gogap/logrus_mate"
   packages = ["."]
-  revision = "e0cf2531d6c27c75074c7cb643c099341e78e3ed"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/orcaman/concurrent-map"
-  packages = ["."]
-  revision = "d4c23bd0e01134806215ffe65ba3fd22ec6721f7"
+  revision = "e0c993a9f3739cc6fe6ae7a92eb4a3ff334b420a"
 
 [[projects]]
   name = "github.com/sirupsen/logrus"
@@ -34,12 +43,15 @@
 [[projects]]
   branch = "master"
   name = "golang.org/x/sys"
-  packages = ["unix","windows"]
+  packages = [
+    "unix",
+    "windows"
+  ]
   revision = "8b4580aae2a0dd0c231a45d3ccb8434ff533b840"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "9488a00ed30e658f264608317928bc1cf051b22af567ce2d22124dfbaf20b1e3"
+  inputs-digest = "26fa6a085620142c0f31d5b2cc1d934f7944d408be92236802ca3ce21c2088f2"
   solver-name = "gps-cdcl"
   solver-version = 1
